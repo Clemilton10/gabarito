@@ -1,0 +1,29 @@
+pip install virtualenv
+pip install pipenv
+
+=> Instalar pipenv na pasta
+	~> python -m venv pasta
+
+=> Entrar na pasta
+	~> cd pasta
+
+//pipenv install
+pipenv --three
+pipenv --two
+
+=> Ativar pipenv
+	~> ./Scripts/Activate
+
+=> Entrar no Shell do pipenv
+	~> pipenv shell
+
+=> Instalar pacotes
+	~> pipenv install Flask
+
+=> Encapsular pacotes para renderização
+	~> py -m pipenv run pip freeze > requirements.txt
+
+=> Gerar EXE
+	~> py -m pipenv run pyinstaller --onefile fulano.py
+	ou
+	~> python -m PyInstaller -F --icon D:\rangel\rangel_worshiper\res\256.ico --add-data './static/*;static' --onefile site.py

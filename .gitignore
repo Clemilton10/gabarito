@@ -1,0 +1,11 @@
+build/
+dist/
+Include/
+Lib/
+Scripts/
+*.exe
+*.spec
+Pipfile
+Pipfile.lock
+pyvenv.cfg
+requirements.txt
